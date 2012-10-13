@@ -9,7 +9,7 @@ Server-side implementation to come.
 ### CoffeeScript
 
 ```coffeescript
-ws = new bbqws("localhost:8888");
+ws = new bbqws("localhost:8888")
 
 ws.on "connect", ->
 	console.log "Connected!"
