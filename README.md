@@ -56,7 +56,7 @@ import tornado.options
 from bbqws import BbqwsSocket
 
 class ExampleHandler(BbqwsSocket):
-    on_example(self, message):
+    def on_example(self, message):
 	    self.emit("response", {"msg": "hurray!"})
 
 application = tornado.web.Application([
